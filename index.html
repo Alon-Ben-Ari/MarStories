@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>MarStories - search mars images</title>
+</head>
+<body>
+    <h1 id="header">MarStories</h1>
+    <h4>Search images  of NASA's Curiosity, Opportunity, and Spirit rovers on Mars.</h4>
+    <div id="search">
+        <form class="row">
+            <div class="col-auto">
+                <label for="sol">Querying by Earth date:</label>
+                <input type="date" id="date" class="form-control" name="date" placeholder="Date" tabindex="0" autofocus> 
+            </div>
+            <div class="col-auto">
+                <label for="date">Querying by sol (Martian day):</label>
+                <input type="number" id="sol" class="form-control" name="sol" placeholder="Sol number">
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn">Search</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="results">
+        <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ Rover name }}</h5>
+              <p class="card-text">{{ sol day: }}</p>
+              <p class="card-text">{{ earth date: }}</p>
+              <p class="card-text">{{ camera name }}</p>
+            </div>
+          </div>
+    </div>
+    
+</body>
+</html>

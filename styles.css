@@ -1,0 +1,46 @@
+html {
+
+}
+
+body {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-image: url(images/index-background.jpg);
+    background-size: cover;
+}
+
+#header {
+    margin: 1rem;
+    font-family: Sansita;
+    color: white;
+}
+
+h4 {
+    
+    margin: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+label {
+    color: rgb(255, 255, 255);
+}
+
+.btn {
+    color: rgba(10, 1, 1, 1);
+    background-color: rgba(200, 200, 200, 1);
+    margin-top: 30%; 
+}
+
+#search {
+    margin: 1.5em;
+} 
+
+.results {
+    margin: 1em;
+    width: 90%;
+    background-color: rgba(196, 196, 196, 0.7);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
