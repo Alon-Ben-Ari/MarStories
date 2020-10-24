@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- https://marstories.netlify.app/ -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,11 +14,20 @@
     <div id="search">
         <form class="row">
             <div class="col-auto">
-                <label for="sol">Querying by Earth date:</label>
-                <input type="date" id="date" class="form-control" name="date" placeholder="Date" tabindex="0" autofocus> 
+                <label for="rover" class="visually-hidden">Select a rover:</label>
+                <select name="rover" class="form-select" tabindex="0" autofocus>
+                    <option selected>Open this select menu</option>
+                    <option value="Curiosity">Curiosity</option>
+                    <option value="Spirit">Spirit</option>
+                    <option value="Opportunity">Opportunity</option>
+                </select>            
             </div>
             <div class="col-auto">
-                <label for="date">Querying by sol (Martian day):</label>
+                <label for="date" class="visually-hidden">Querying by Earth date:</label>
+                <input type="date" id="date" class="form-control" name="date"> 
+            </div>
+            <div class="col-auto">
+                <label for="sol" class="visually-hidden">Querying by sol (Martian day):</label>
                 <input type="number" id="sol" class="form-control" name="sol" placeholder="Sol number">
             </div>
             <div class="col-auto">
